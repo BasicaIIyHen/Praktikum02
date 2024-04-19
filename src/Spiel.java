@@ -10,8 +10,15 @@ public class Spiel {
 
     }
 
-    public void menschZiehen(){
 
+    //Problem 1: Die Methode menschZiehen() ist nicht implementiert.
+    public void menschZiehen(){
+    int gezogeneHoelzer = Eingabe.leseHoelzer();
+    if (gezogeneHoelzer <= AnzahlStreichhoelzer) {
+        AnzahlStreichhoelzer -= gezogeneHoelzer;
+    } else {
+         System.out.println("Sie können nicht mehr Hölzer ziehen als vorhanden sind.");
+    }
 
     }
 
