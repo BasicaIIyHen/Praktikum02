@@ -26,15 +26,16 @@ public class Ausgabe {
 
     public static void spielstand(int AnzahlStreichhoelzer) {
         System.out.println("Es sind noch " + AnzahlStreichhoelzer + " Streichhölzer übrig.");
-        }
+    }
 
-        public static void menschZug(int gezogeneHoelzer, int verbleibendeHoelzer) {
+    public static void menschZug(int gezogeneHoelzer, int verbleibendeHoelzer) {
         System.out.println("Der Mensch zieht " + gezogeneHoelzer + " Streichhölzer.");
         System.out.println("Es sind noch " + verbleibendeHoelzer + " Streichhölzer uebrig.");
-        }
+    }
 
-        public static void computerZug(int AnzahlStreichhoelzer) {
-        System.out.println("Der Computer zieht " + AnzahlStreichhoelzer + " Streichhoelzer.");
+    public static void computerZug(int gezogeneHoelzer, int verbleibendeHoelzer) {
+        System.out.println("Der Computer zieht " + gezogeneHoelzer + " Streichhoelzer.");
+        System.out.println("Es sind noch " + verbleibendeHoelzer + " Streichhölzer uebrig.");
     }
 
 

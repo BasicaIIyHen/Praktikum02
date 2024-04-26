@@ -1,4 +1,3 @@
-import java.io.InputStream;
 import java.io.InputStreamReader;
 
 public class Eingabe {
@@ -8,7 +7,7 @@ public class Eingabe {
         InputStreamReader isr = new InputStreamReader(System.in);
 
         try{
-            int zahl = isr.read();
+            int zahl = Character.getNumericValue(isr.read());
             return zahl;
         } catch (Exception e) {
             Ausgabe.keineZahl();
@@ -16,14 +15,11 @@ public class Eingabe {
         }
     }
 
-    public static int leseHoelzer(int AnzahlStreichhoelzer) {
+    public static int leseHoelzer() {
         int zahl = leseZahl();
         if(zahl < 1 || zahl > 3) {
             Ausgabe.zahlNichtImBereich();
-            return leseHoelzer(AnzahlStreichhoelzer);
-        } else if(zahl > AnzahlStreichhoelzer) {
-            Ausgabe.zugNichtMoeglich();
-            return leseHoelzer(AnzahlStreichhoelzer);
+            return leseHoelzer();
         } else {
             return zahl;
         }
