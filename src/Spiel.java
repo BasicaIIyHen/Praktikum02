@@ -4,16 +4,18 @@ public class Spiel {
     public Spiel(int AnzahlStreichhoelzer) {
         this.AnzahlStreichhoelzer = AnzahlStreichhoelzer;
 
-        Ausgabe.spielstand(AnzahlStreichhoelzer);
+        Ausgabe.spielstand(this.AnzahlStreichhoelzer);
 
-        while (AnzahlStreichhoelzer > 0) {
+        while (this.AnzahlStreichhoelzer > 0) {
             menschZiehen();
-            if (AnzahlStreichhoelzer == 0) {
+            if (this.AnzahlStreichhoelzer == 0) {
                 Ausgabe.computerGewinnt();
+                break;
             }
             computerZiehen();
-            if (AnzahlStreichhoelzer == 0) {
+            if (this.AnzahlStreichhoelzer == 0) {
                 Ausgabe.menschGewinnt();
+                break;
             }
         }
 

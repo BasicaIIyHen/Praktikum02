@@ -21,21 +21,21 @@ public class Ausgabe {
     }
 
     public static void zugNichtMoeglich() {
-        System.out.println("Der Zug ist nicht möglich!");
+        System.out.println("Der Zug ist nicht moeglich!");
     }
 
     public static void spielstand(int AnzahlStreichhoelzer) {
-        System.out.println("Es sind noch " + AnzahlStreichhoelzer + " Streichhölzer übrig.");
+        System.out.println("Es sind noch " + AnzahlStreichhoelzer + " Streichhoelzer uebrig.");
     }
 
     public static void menschZug(int gezogeneHoelzer, int verbleibendeHoelzer) {
-        System.out.println("Der Mensch zieht " + gezogeneHoelzer + " Streichhölzer.");
-        System.out.println("Es sind noch " + verbleibendeHoelzer + " Streichhölzer uebrig.");
+        System.out.println("Der Mensch zieht " + gezogeneHoelzer + " Streichhoelzer.");
+        System.out.println("Es sind noch " + verbleibendeHoelzer + " Streichhoelzer uebrig.");
     }
 
     public static void computerZug(int gezogeneHoelzer, int verbleibendeHoelzer) {
         System.out.println("Der Computer zieht " + gezogeneHoelzer + " Streichhoelzer.");
-        System.out.println("Es sind noch " + verbleibendeHoelzer + " Streichhölzer uebrig.");
+        System.out.println("Es sind noch " + verbleibendeHoelzer + " Streichhoelzer uebrig.");
     }
 
 
